@@ -10,12 +10,10 @@ const Navbar = () => {
 
   return (
     <header className="flex justify-between items-center top-0 left-0 w-full h-20 px-4 bg-yellow-500 shadow-md">
-      {/* Logo */}
       <div className="flex items-center space-x-4">
         <a href="/" className="flex items-center">
           <img src={back} alt="Logo" className="h-24 cursor-pointer" />
         </a>
-        {/* Display anchor tags directly on larger screens (laptop or tablet) */}
         <div className="hidden md:flex items-left space-x-4">
           <a href="/" className="text-white font-semibold hover:text-gray-200">Home</a>
           <a href="/explore" className="text-white font-semibold hover:text-gray-200">Explore</a>
@@ -24,7 +22,7 @@ const Navbar = () => {
           <a href="/reviews" className="text-white font-semibold hover:text-gray-200">Reviews</a>
         </div>
       </div>
-      {/* Enquire Button */}
+     
       <div className="hidden md:flex items-right space-x-4">
         <button
           className="px-4 py-2 bg-green-500 text-white font-semibold rounded hover:bg-green-600 focus:outline-none focus:bg-green-600"
@@ -34,7 +32,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Hamburger Menu */}
+    
       <div className="flex items-center md:hidden gap-4">
       <button
           className="px-4 py-2 bg-green-500 text-white font-semibold rounded hover:bg-green-600 focus:outline-none focus:bg-green-600"
@@ -55,7 +53,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Sidebar for anchor tags (visible on mobile screens and smaller) */}
       <div
         className={
           isSidebarOpen
@@ -66,8 +63,7 @@ const Navbar = () => {
         
         
       
-        <div className="bg-yellow-400 opacity-60 rounded p-4 w-64 relative" onClick={e => e.stopPropagation()}>
-       
+        <div className="bg-yellow-400 opacity-60 rounded p-4 w-64 relative" onClick={e => e.stopPropagation()}> 
           <button className="absolute top-2 right-2 focus:outline-none" onClick={toggleSidebar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
