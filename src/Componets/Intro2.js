@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import Title from "./Title";
 
 const Intro2 = () => {
-  // Settings for the slider
+  
   const settings = {
     dots: false,
     fade: true,
@@ -12,14 +12,14 @@ const Intro2 = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
-    autoplay: true, // Autoplay enabled
-    autoplaySpeed: 4000, // Autoplay speed in milliseconds
-    arrows: false, // Remove next and previous buttons
+    autoplay: true, 
+    autoplaySpeed: 4000,
+    arrows: false, 
   };
 
-  // Function to generate a random image URL
+  
   const getRandomImageUrl = () => {
-    // Array of placeholder image URLs
+    
     const placeholders = [
       "https://upload.wikimedia.org/wikipedia/commons/d/d4/Cerro_Tololo_Hotel_Interior_360_Panorama_%282022_04_08_Pano360_Tololo_Hotel_Room-CC%29.jpg",
       "https://fastly.picsum.photos/id/953/800/400.jpg?hmac=NbWnQu2J-1UvsjJb1Y4Gr80Tp7xr4m__AYuVMhc0z2M",
@@ -27,9 +27,7 @@ const Intro2 = () => {
       "https://via.placeholder.com/800x400?text=Slide+4",
       "https://via.placeholder.com/800x400?text=Slide+5",
     ];
-    // Get a random index from the placeholders array
     const randomIndex = Math.floor(Math.random() * placeholders.length);
-    // Return the randomly selected image URL
     return placeholders[randomIndex];
   };
 
@@ -116,8 +114,6 @@ const Intro2 = () => {
             </div>
           </div>
         </div>
-        
-        
       </div>
     </>
   );
