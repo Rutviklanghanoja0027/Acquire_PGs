@@ -4,13 +4,13 @@ import background from '../../src/assets/bg.jpg';
 const Intro = () => {
   return (
     <header className="relative flex flex-col items-center justify-center overflow-hidden min-h-[600px] min-w-screen bg-gradient-to-b from-black to-black">
-      {/* Background Image */}
+      
       <div className="absolute inset-0">
         <img src={background} alt="" className="object-cover w-full h-full" />
         <div className="absolute inset-0 bg-black opacity-60"></div>
       </div>
 
-      {/* Content */}
+      
       <div className="relative w-full h-full flex flex-col items-center justify-center text-center text-white px-4">
         <div className="heading-container mb-8">
           <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-4">Redefining PG Spaces of Ahmedabad</h1>
